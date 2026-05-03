@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Cloud – Piyama Premium</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Poppins Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animate On Scroll) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              pacifico: ["Pacifico", "cursive"],
+            },
+            colors: {
+              pink: { DEFAULT: "#ffb3c6", dark: "#ff85a1" },
+              lav: { DEFAULT: "#c9b8f5", dark: "#a78bfa" },
+              mint: { DEFAULT: "#b5ead7", dark: "#6fcf97" },
+              peach: "#fcd5b0",
+              butter: "#fde68a",
+              sky: "#bae6fd",
+              rose: "#f3d4e8",
+              sage: "#d1fae5",
+              peri: "#e0e7ff",
+              cream: "#fff5f8",
+              plum: "#3d2c3e",
+              muted: "#9e8fa0",
+            },
+            keyframes: {
+              gradShift: {
+                "0%,100%": { backgroundPosition: "0% 50%" },
+                "50%": { backgroundPosition: "100% 50%" },
+              },
+              floatUp: {
+                "0%,100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-8px)" },
+              },
+              pulse2: {
+                "0%,100%": { boxShadow: "0 8px 24px rgba(167,139,250,0.4)" },
+                "50%": { boxShadow: "0 12px 36px rgba(167,139,250,0.75)" },
+              },
+              waBounce: {
+                "0%,100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-8px)" },
+              },
+              shimmer: {
+                "0%": { backgroundPosition: "-200% center" },
+                "100%": { backgroundPosition: "200% center" },
+              },
+            },
+            animation: {
+              gradShift: "gradShift 4s ease-in-out infinite",
+              floatUp: "floatUp 3s ease-in-out infinite",
+              pulse2: "pulse2 2.5s ease-in-out infinite",
+              waBounce: "waBounce 2.5s ease-in-out infinite",
+              shimmer: "shimmer 3s linear infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-cream text-plum">
+    <!-- ======== TOP BAR ======== -->
+    <div
+      class="grad-bar text-white text-center text-xs font-semibold py-2 px-3 tracking-wide"
+    >
+      ✨ FREE ONGKIR ke Seluruh Indonesia &nbsp;·&nbsp; Garansi 100% Original ✨
+    </div>
+
+    <!-- ======== HERO ======== -->
+    <section
+      class="hero-bg px-5 pt-10 pb-8 text-center relative overflow-hidden"
+    >
+      <!-- deco blobs -->
+      <span class="absolute text-8xl opacity-10 -top-4 -left-4 select-none"
+        >☁️</span
+      >
+      <span class="absolute text-7xl opacity-10 -bottom-2 -right-2 select-none"
+        >🌙</span
+      >
+
+      <div data-aos="fade-down" data-aos-duration="700" class="text-center">
+        <!-- Brand -->
+        <p
+          class="font-pacifico text-3xl md:text-4xl grad-text leading-tight tracking-wide flex items-center justify-center gap-2"
+        >
+          Seven Cloud
+          <span class="text-xl md:text-2xl opacity-80">👚</span>
+        </p>
+
+        <!-- Divider kecil -->
+        <div
+          class="w-12 h-[2px] bg-gradient-to-r from-pink to-lav mx-auto my-2 rounded-full"
+        ></div>
+
+        <!-- Tagline -->
+        <p
+          class="text-xs md:text-sm text-muted font-medium tracking-wide opacity-80"
+        >
+          Piyama Premium · Nyaman Sepanjang Malam
+        </p>
+      </div>
+
+      <!-- Color Swatches -->
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        class="mb-6"
+      >
+        <p
+          class="text-xs font-bold text-muted uppercase tracking-widest mt-6 mb-3"
+        >
+          ✦ Pilih warna favoritmu ✦
+        </p>
+        <div class="flex justify-center flex-wrap gap-2">
+          <!-- GANTI href ke link Shopee kamu -->
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #ffb3c6"
+            title="Pink Lembut"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #c9b8f5"
+            title="Lavender"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #b5ead7"
+            title="Mint"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #fde68a"
+            title="Butter Yellow"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #fcd5b0"
+            title="Peach"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #bae6fd"
+            title="Baby Blue"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #f3d4e8"
+            title="Dusty Rose"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #d1fae5"
+            title="Sage"
+          ></a>
+          <a
+            href="https://s.shopee.co.id/gMalAQVAg"
+            target="_blank"
+            class="swatch"
+            style="background: #e0e7ff"
+            title="Periwinkle"
+          ></a>
+        </div>
+      </div>
+
+      <!-- Product Image -->
+      <div
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="700"
+        class="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+      >
+        <span
+          class="float-tag left-0 top-16 text-lav-dark border-2 border-lav text-sm md:text-base px-4 py-2"
+          style="border-color: #c9b8f5; color: #a78bfa"
+        >
+          🌙 Super Lembut
+        </span>
+
+        <!-- GANTI href ke link Shopee -->
+        <a
+          href="https://s.shopee.co.id/8ASbdnovog"
+          target="_blank"
+          class="block"
+        >
+          <img
+            src="images/produk1.png"
+            alt="Produk Piyama"
+            class="w-full max-w-xl mx-auto rounded-2xl"
+          />
+        </a>
+        <span
+          class="float-tag right-0 top-28 text-pink-dark border-2 border-pink text-sm md:text-base px-4 py-2 shadow-md"
+          style="border-color: #ffb3c6; color: #ff85a1; animation-delay: 1s"
+        >
+          ☁️ Anti Gerah
+        </span>
+
+        <span
+          class="float-tag left-4 bottom-44 text-mint-dark border-2 text-sm md:text-base px-4 py-2 shadow-md"
+          style="border-color: #b5ead7; color: #6fcf97; animation-delay: 0.5s"
+        >
+          🌿 Nyaman Seharian
+        </span>
+
+        <span
+          class="float-tag right-4 bottom-28 text-yellow-500 border-2 text-sm md:text-base px-4 py-2 shadow-md"
+          style="border-color: #fde68a; color: #f59e0b; animation-delay: 1.5s"
+        >
+          ✨ Tidak Mudah Kusut
+        </span>
+      </div>
+      <p class="text-xs text-muted font-semibold mt-2">
+        👆 Tap gambar untuk lihat produk di Shopee
+      </p>
+    </section>
+
+    <!-- ======== PROMO BAR ======== -->
+    <div data-aos="fade-up" data-aos-duration="500" class="mx-4 -mt-2">
+      <div
+        class="promo-glow text-white text-center font-bold text-base rounded-2xl px-5 py-4 shadow-lg"
+      >
+        🎀 Beli 2 pasang makin hemat!
+        <span
+          class="bg-white text-lav-dark font-black text-xs px-3 py-1 rounded-full ml-1"
+          style="color: #a78bfa"
+          >DISKON 15%</span
+        >
+      </div>
+    </div>
+
+    <!-- ======== TRUST ======== -->
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="600"
+      class="bg-white rounded-2xl mx-4 mt-4 px-5 py-5 shadow-md text-center"
+    >
+      <p class="text-3xl font-black">✅ 200.000+</p>
+      <p class="text-sm text-muted mt-1">
+        Pelanggan Bahagia di Seluruh Indonesia
+      </p>
+      <div class="rainbow-line my-4"></div>
+      <div class="flex justify-around">
+        <div class="text-center">
+          <div class="text-2xl">⭐</div>
+          <div class="text-xs font-bold mt-1">4.9 / 5</div>
+          <div class="text-xs text-muted">Ribuan Ulasan</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl">🚚</div>
+          <div class="text-xs font-bold mt-1">Gratis Ongkir</div>
+          <div class="text-xs text-muted">Seluruh Indo</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl">🔄</div>
+          <div class="text-xs font-bold mt-1">Garansi</div>
+          <div class="text-xs text-muted">100% Original</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== CTA BUTTONS ======== -->
+    <div class="px-4 pt-6 pb-2">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="500"
+        class="text-center font-black text-lg mb-4"
+      >
+        💖 Mau beli? Klik di sini!
+      </p>
+
+      <!-- GANTI semua href ke link kamu -->
+      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+        <a
+          href="https://s.shopee.co.id/8ASbdnovog"
+          target="_blank"
+          class="btn-mkt btn-shopee"
+        >
+          <img src="images/icon-shopee.png" alt="Shopee" class="w-6 h-6 mr-3" />
+          <div class="flex-1">
+            <div class="font-bold leading-tight">Belanja di Shopee</div>
+            <div class="text-xs opacity-80 mt-0.5 font-normal">
+              Cashback & Gratis Ongkir tiap hari!
+            </div>
+          </div>
+          <span class="opacity-70">→</span>
+        </a>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="120" data-aos-duration="500">
+        <a
+          href="https://www.tiktok.com/@wellbox.id?_r=1&_t=ZS-961Ih1OyQUf"
+          target="_blank"
+          class="btn-mkt btn-tiktok"
+        >
+          <img
+            src="images/icon-tiktok.png"
+            alt="Tiktok"
+            class="w-6 h-6 mr-3 drop-shadow-sm"
+          />
+          <div class="flex-1">
+            <div class="font-bold leading-tight">Belanja di TikTok Shop</div>
+            <div class="text-xs opacity-80 mt-0.5 font-normal">
+              Live streaming promo setiap malam!
+            </div>
+          </div>
+          <span class="opacity-70">→</span>
+        </a>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="190" data-aos-duration="500">
+        <a
+          href="https://wa.me/6285189252788"
+          target="_blank"
+          class="btn-mkt btn-wa"
+        >
+          <img
+            src="images/icon-whatsapp.png"
+            alt="Whatsapp"
+            class="w-6 h-6 mr-3 drop-shadow-sm"
+          />
+          <div class="flex-1">
+            <div class="font-bold leading-tight">Chat via WhatsApp</div>
+            <div class="text-xs opacity-80 mt-0.5 font-normal">
+              Respon cepat · Bulk order tersedia
+            </div>
+          </div>
+          <span class="opacity-70">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ======== TESTIMONIALS CAROUSEL ======== -->
+    <div class="px-4 pt-6 pb-2">
+      <p
+        data-aos="fade-right"
+        data-aos-duration="600"
+        class="font-black text-lg mb-4"
+      >
+        💬 Kata Mereka
+      </p>
+
+      <div data-aos="fade-up" data-aos-duration="700">
+        <div class="overflow-hidden rounded-2xl">
+          <div class="carousel-track" id="reviewTrack">
+            <div class="review-slide px-0.5">
+              <div class="rev-card bg-white rounded-2xl p-5 shadow-md">
+                <div class="text-amber-400 text-lg mb-2">★★★★★</div>
+                <p class="text-sm leading-relaxed text-gray-600 italic">
+                  "Piyamanya SUPER lembut banget, udah nyoba berbagai merek tapi
+                  Seven Cloud juaranya! Bahannya adem ga bikin gerah pas tidur,
+                  jahitannya juga rapi. Langsung beli 3 warna sekaligus deh 🥰"
+                </p>
+                <p class="mt-3 font-bold text-sm">
+                  — Dinda R.
+                  <span
+                    class="text-mint-dark font-semibold text-xs"
+                    style="color: #6fcf97"
+                    >✔ Pembeli Terverifikasi</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="review-slide px-0.5">
+              <div class="rev-card bg-white rounded-2xl p-5 shadow-md">
+                <div class="text-amber-400 text-lg mb-2">★★★★★</div>
+                <p class="text-sm leading-relaxed text-gray-600 italic">
+                  "Cocok banget buat hadiah! Aku beliin mama piyama ini dan
+                  beliau suka banget. Warna pinknya cantik, ga pudar setelah
+                  dicuci berkali-kali. Packing juga lucu, kayak mau dikasih ke
+                  orang tersayang 💕"
+                </p>
+                <p class="mt-3 font-bold text-sm">
+                  — Sella A.
+                  <span class="text-xs font-semibold" style="color: #6fcf97"
+                    >✔ Pembeli Terverifikasi</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="review-slide px-0.5">
+              <div class="rev-card bg-white rounded-2xl p-5 shadow-md">
+                <div class="text-amber-400 text-lg mb-2">★★★★★</div>
+                <p class="text-sm leading-relaxed text-gray-600 italic">
+                  "Aku ibu dua anak, piyama ini jadi andalan tidur setiap malem.
+                  Gerakannya bebas ga kaku, bisa nemenin anak tidur sambil
+                  nyaman. Recommended banget buat ibu-ibu! Udah rekomendasiin ke
+                  arisan juga hehe 😄"
+                </p>
+                <p class="mt-3 font-bold text-sm">
+                  — Nadia W.
+                  <span class="text-xs font-semibold" style="color: #6fcf97"
+                    >✔ Pembeli Terverifikasi</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="review-slide px-0.5">
+              <div class="rev-card bg-white rounded-2xl p-5 shadow-md">
+                <div class="text-amber-400 text-lg mb-2">★★★★★</div>
+                <p class="text-sm leading-relaxed text-gray-600 italic">
+                  "Kirim cepet banget, hari ini order besok udah nyampe!
+                  Piyamanya persis foto, warnanya cantik pastel aesthetic
+                  banget. Udah beli 5 kali dan ga pernah kecewa. Seller juga
+                  ramah, WA fast response 🌸"
+                </p>
+                <p class="mt-3 font-bold text-sm">
+                  — Kirana M.
+                  <span class="text-xs font-semibold" style="color: #6fcf97"
+                    >✔ Pembeli Terverifikasi</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="review-slide px-0.5">
+              <div class="rev-card bg-white rounded-2xl p-5 shadow-md">
+                <div class="text-amber-400 text-lg mb-2">★★★★★</div>
+                <p class="text-sm leading-relaxed text-gray-600 italic">
+                  "Bahan cotton-nya premium banget ya, berasa adem sejuk di
+                  kulit. Pas di badan juga ga terlalu longgar ga terlalu ketat.
+                  Warna lavender-nya persis foto, aesthetic banget dipake foto
+                  OOTD pagi hari 📸✨"
+                </p>
+                <p class="mt-3 font-bold text-sm">
+                  — Tiara P.
+                  <span class="text-xs font-semibold" style="color: #6fcf97"
+                    >✔ Pembeli Terverifikasi</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="flex justify-center gap-2 mt-4" id="carouselDots"></div>
+
+        <!-- Nav -->
+        <div class="flex gap-3 mt-3">
+          <button class="cnav" id="prevBtn">← Sebelumnya</button>
+          <button class="cnav" id="nextBtn">Berikutnya →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== FEATURES ======== -->
+    <div class="px-4 pt-6 pb-2">
+      <p
+        data-aos="fade-right"
+        data-aos-duration="600"
+        class="font-black text-lg mb-4"
+      >
+        ✨ Kenapa Seven Cloud?
+      </p>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="600"
+          class="feat-card bg-white rounded-2xl p-4 text-center shadow-md hover:-translate-y-1 transition-transform"
+        >
+          <div class="text-4xl mb-2">🧸</div>
+          <div class="font-bold text-sm">Bahan Super Lembut</div>
+          <div class="text-xs text-muted mt-1 leading-relaxed">
+            Cotton premium terasa seperti pelukan hangat setiap malam
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="80"
+          data-aos-duration="600"
+          class="feat-card bg-white rounded-2xl p-4 text-center shadow-md hover:-translate-y-1 transition-transform"
+        >
+          <div class="text-4xl mb-2">🌬️</div>
+          <div class="font-bold text-sm">Anti Gerah & Adem</div>
+          <div class="text-xs text-muted mt-1 leading-relaxed">
+            Sirkulasi udara optimal, tidur nyenyak tanpa keringat
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="160"
+          data-aos-duration="600"
+          class="feat-card bg-white rounded-2xl p-4 text-center shadow-md hover:-translate-y-1 transition-transform"
+        >
+          <div class="text-4xl mb-2">🎨</div>
+          <div class="font-bold text-sm">Warna Pastel Estetik</div>
+          <div class="text-xs text-muted mt-1 leading-relaxed">
+            Pilihan warna cantik, tetap cerah berkali-kali dicuci
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="240"
+          data-aos-duration="600"
+          class="feat-card bg-white rounded-2xl p-4 text-center shadow-md hover:-translate-y-1 transition-transform"
+        >
+          <div class="text-4xl mb-2">🤸</div>
+          <div class="font-bold text-sm">Gerak Bebas 360°</div>
+          <div class="text-xs text-muted mt-1 leading-relaxed">
+            Relaxed fit, nyaman tidur maupun aktivitas santai
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="320"
+          data-aos-duration="600"
+          class="feat-card bg-white rounded-2xl p-4 text-center shadow-md hover:-translate-y-1 transition-transform"
+        >
+          <div class="text-4xl mb-2">🧴</div>
+          <div class="font-bold text-sm">Ramah Kulit Sensitif</div>
+          <div class="text-xs text-muted mt-1 leading-relaxed">
+            Bebas bahan kimia keras, aman untuk si kecil
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="600"
+          class="feat-card bg-white rounded-2xl p-4 text-center shadow-md hover:-translate-y-1 transition-transform"
+        >
+          <div class="text-4xl mb-2">💝</div>
+          <div class="font-bold text-sm">Kado Terbaik</div>
+          <div class="text-xs text-muted mt-1 leading-relaxed">
+            Packing cantik siap hadir, cocok hadiah & arisan
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== FOOTER ======== -->
+    <footer
+      data-aos="fade-up"
+      data-aos-duration="600"
+      class="text-center px-4 pt-8 pb-14 text-xs text-muted"
+    >
+      <p class="font-pacifico text-xl grad-text mb-1">Seven Cloud ☁️</p>
+      <p>Piyama Premium untuk Tidur Lebih Nyaman</p>
+      <p class="mt-1">© 2025 · All Rights Reserved</p>
+    </footer>
+
+    <!-- ======== FLOATING WA ======== -->
+    <!-- GANTI href ke nomor WA kamu -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="wa-float"
+      >💬</a
+    >
+
+    <script>
+      // ===== AOS Init =====
+      AOS.init({
+        once: true,
+        offset: 60,
+        easing: "ease-out-cubic",
+      });
+
+      // ===== CAROUSEL =====
+      const track = document.getElementById("reviewTrack");
+      const dotsEl = document.getElementById("carouselDots");
+      const slides = track.querySelectorAll(".review-slide");
+      const total = slides.length;
+      let current = 0,
+        autoTimer;
+
+      // Build dots
+      slides.forEach((_, i) => {
+        const d = document.createElement("button");
+        d.className = "dot-btn" + (i === 0 ? " active" : "");
+        d.addEventListener("click", () => {
+          goTo(i);
+          resetAuto();
+        });
+        dotsEl.appendChild(d);
+      });
+
+      function goTo(idx) {
+        current = (idx + total) % total;
+        const w = track.parentElement.offsetWidth;
+        track.style.transform = `translateX(-${current * w}px)`;
+        dotsEl
+          .querySelectorAll(".dot-btn")
+          .forEach((d, i) => d.classList.toggle("active", i === current));
+      }
+
+      document.getElementById("prevBtn").addEventListener("click", () => {
+        goTo(current - 1);
+        resetAuto();
+      });
+      document.getElementById("nextBtn").addEventListener("click", () => {
+        goTo(current + 1);
+        resetAuto();
+      });
+
+      function startAuto() {
+        autoTimer = setInterval(() => goTo(current + 1), 4000);
+      }
+      function resetAuto() {
+        clearInterval(autoTimer);
+        startAuto();
+      }
+
+      // Touch swipe
+      let startX = 0;
+      track.addEventListener(
+        "touchstart",
+        (e) => {
+          startX = e.touches[0].clientX;
+        },
+        { passive: true },
+      );
+      track.addEventListener("touchend", (e) => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) {
+          goTo(diff > 0 ? current + 1 : current - 1);
+          resetAuto();
+        }
+      });
+
+      startAuto();
+    </script>
+  </body>
+</html>
